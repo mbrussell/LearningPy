@@ -143,11 +143,105 @@
 # else: 
 #     print("It's not a hot day.") 
 
-name = "Matthew"
+# name = "Matthew"
 
-if len(name) <3:
-    print("Name must be at least three characters.")
-elif len(name) > 50:
-    print("Name can be a max of 50 characters.")
-else:
-    print("Name looks good!")
+# if len(name) <3:
+#     print("Name must be at least three characters.")
+# elif len(name) > 50:
+#     print("Name can be a max of 50 characters.")
+# else:
+#     print("Name looks good!")
+
+## Project: weight converter
+
+# weight = int(input("Weight: "))
+# unit = input("(L)bs or (K)g: ")
+# if unit.upper() == "L":
+#     converted_weight = weight * 0.45
+#     print(f"You are {converted_weight} kilos.")
+# else:
+#     converted_weight = round(weight / 0.45, 3)
+#     print(f"You are {converted_weight} pounds.")
+
+# While loops (execute a block of code multiple times)
+
+# i = 1
+
+# while i <= 5:
+#     print("*" * i)
+#     i = i + 1
+# print("DONE")
+ 
+# # Guessing game
+# secret_number = 9
+# guess_count = 0
+# guess_limit = 3
+
+# while guess_count < guess_limit:
+#     guess = int(input("Guess: "))
+#     guess_count += 1
+#     if guess == secret_number:
+#         print("You won!")
+#         break
+# else: 
+#     print("Sorry, you failed.")
+
+## Car game
+
+# car_command = ""
+# started = False
+# while True:
+#     car_command = input("> ").lower()
+#     if car_command == "start":
+#         if started:
+#             print{"Car is already started."}
+#         else:
+#             started = True    
+#             print("You started the car. Vrooom!")
+#     elif car_command == "stop":
+#         if not started:
+#             print("Car is already stopped.")
+#         else:
+#             started = False    
+#             print("You stopped the car. Schreeech!")
+#     elif car_command == "help":
+#         print("""
+# start - to start
+# stop - to stop
+# quit - to quit
+#         """)
+#     elif car_command == "quit":
+#          break    
+#     else:
+#         print("Sorry, I don't get that")    
+
+# For loops
+# Squared brackets make list
+# for item in ["Mosh", "John", "Sarah"]:
+#     print(item)
+
+# for item in range(5, 10, 2):
+#     print(item) 
+# prices = [10, 20, 30]
+# total = 0
+# for price in prices:
+#     total = total + price
+
+# print(f"Total: {total}")
+
+## Nested loops
+# for x in range(4):
+#     for y in range(3):
+#           print(f"({x}. {y})")
+
+# ## Challenge
+# numbers = [5, 2, 5, 2, 2]
+# numbers_L = [2, 2, 2, 2, 5]
+# # for x_count in numbers:
+# #     print("x" * x_count)
+
+# for x_count in numbers_L:
+#     output = ""
+#     for count in range(x_count):
+#         output = "x" + output
+#     print (output)
