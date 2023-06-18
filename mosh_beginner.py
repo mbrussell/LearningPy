@@ -234,6 +234,7 @@
 #     for y in range(3):
 #           print(f"({x}. {y})")
 
+
 # ## Challenge
 # numbers = [5, 2, 5, 2, 2]
 # numbers_L = [2, 2, 2, 2, 5]
@@ -245,3 +246,189 @@
 #     for count in range(x_count):
 #         output = "x" + output
 #     print (output)
+
+# # Lists
+# names = ["John", "Mary", "Matt"]
+# names[2] = "Matthew"
+# print(names)
+# print(names[1:2])
+# print(names[:])
+
+# nums = [12, 11, 15, 9]
+# max = nums[0]
+# for num in nums:
+#     if num > max:
+#         max = num
+# print(max)
+# print(max(nums))
+
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+
+# print(matrix[0][1])
+
+# for row in matrix:
+#     for item in row:
+#         print(item)
+
+# List methods
+# numbers = [5, 2, 2, 7, 4]
+# numbers.sort()
+# numbers.reverse()
+# numbers2 = numbers.copy()
+# numbers.append(10)
+# print(numbers)
+# print(numbers2)
+
+# numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+# uniques = []
+# for number in numbers:
+#     if number not in uniques:
+#         uniques.append(number)
+# print(uniques)        
+
+# Tuples - cannot be altered like lists can
+
+# numbers = (1, 2, 3)
+# numbers[0] = 10
+# print(numbers[0])
+
+# Unpacking
+
+# coords = (1, 2, 3)
+# #coords[0] * coords[1] * coords[2]
+# #x = coords[0]
+# #y = coords[1]
+# #z = coords[2]
+
+# x, y, z = coords
+# print(y)
+
+# Dictionaries
+
+# customer = {
+#     "name": "John Smith",
+#     "age": 30,
+#     "is_verified": True
+# }
+
+# print(customer.get("name"))
+
+# print(customer.get("birthdate", "Oct 6, 1983"))
+# customer["name"] = "Jack Smith"
+# print(customer["name"])
+
+# phone = input("Phone:")
+
+# digits_mapping = {
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four"
+# }
+
+# output = ""
+# for ch in phone:
+#     output += digits_mapping.get(ch, "!", " ")
+
+# print(output)
+
+# Emoji converter
+# message = input(">")
+# words = message.split(" ")
+# emojis = {
+#     ":)": "happy face",
+#     ":(": "sad face"
+# }
+# ouput = ""
+# for word in words:
+#     output += emojis.get(word, word) + " "
+# print(output)    
+
+# # Functions, Parameters, Keyword arguments
+# def greet_user(first_name, last_name):
+#     print(f"Hi {first_name} {last_name}!")
+#     print("Welcome aboard!")
+
+
+# print("Start")
+# greet_user(last_name = "Smith", first_name = "John")
+# calc_cost(total = 50, shipping = 5, discount = 0.1)
+# print("Finish")   
+ 
+# Return statement
+# def square(number): 
+#     return number * number
+
+
+# print(square(3))
+
+# # Exercise
+#  message = input(">")
+#  words = message.split(" ")
+#  emojis = {
+#      ":)": "happy face",
+#      ":(": "sad face"
+#  }
+#  ouput = ""
+#  for word in words:
+#      output += emojis.get(word, word) + " "
+#  print(output)    
+
+# def emoji_converter(message):
+#     words = message.split(" ")
+#     emojis = {
+#         ":)": "happy face",
+#         ":(": "sad face"
+#     }
+#     ouput = ""
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output        
+
+
+# message = input(">") 
+# print(emoji_converter(message))       
+
+# # Exceptions
+# try: 
+#     age = int(input("age: "))
+#     income = 20000
+#     risk = income/age
+#     print(age)
+# except ZeroDivisionError:
+#     print("Age cannot be zero.")
+# except ValueError:
+#     print("Invalid value")    
+
+# Comments
+
+# This ignores text
+# Use comments to explain whys and hows, not whats.
+# print("Mets are a good baseball team.")
+
+# Classes
+# Use Pascal naming convention
+# class Point:
+#     def move(self):
+#         print("move")
+
+#     def draw(self):
+#         print("draw")
+
+
+# point1 = Point()
+# point1.x = 10
+# point1.y = 20
+# print(point1.x)
+# point1.draw()
+
+# point2 = Point()
+# point2.x = 1
+# print(point2.x)
+
+# Constructors
+
