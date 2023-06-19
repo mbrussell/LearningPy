@@ -413,11 +413,12 @@
 # Classes
 # Use Pascal naming convention
 # class Point:
-#     def move(self):
-#         print("move")
+#      def __init__(self, x, y)
+#      def move(self):
+#          print("move")
 
-#     def draw(self):
-#         print("draw")
+#      def draw(self):
+#          print("draw")
 
 
 # point1 = Point()
@@ -432,3 +433,71 @@
 
 # Constructors
 
+# class Point:
+#      def __init__(self, x, y):
+#          self.x = x
+#          self.y = y
+#      def move(self):
+#          print("move")
+
+#      def draw(self):
+#          print("draw")
+
+
+# point = Point(10, 20)
+# point.x = 11
+# print(point.x)
+
+# Exercise
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def talk(self):
+#         print(f"Hi! I'm {self.name}")
+
+# bob = Person("Bob Smith") 
+
+# john = Person("John Smith")
+# bob.talk()       
+# bob = Person("Bob Smith") 
+
+# Inheritance
+# DRY: Don't repeat yourself
+
+# class Mammal:
+#         def walk(self):
+#         print("walk")
+
+
+# class Dog(Mammal):
+#         def bark(self):
+#         print("bark")
+
+
+# class Cat(Mammal):
+#        pass
+
+# dog1 = Dog()
+# dog1.bark
+
+# Modules
+# Modules are like sourcing a file in R
+# # Imports all functions of a module
+# import converters
+
+# # imports a select function from a module
+# from converters import kg_to_lbs
+
+# print(kg_to_lbs(70))
+# print(converters.kg_to_lbs(70))
+
+# Exercise
+# import utils
+
+# numbers = [120, 37, 4]
+# maximum = utils.find_max(numbers)
+# print(maximum)
+# print(max(numbers)) 
+
+# Packages
